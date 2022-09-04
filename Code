@@ -1,0 +1,5 @@
+!pip install kafka-python #Kafka kütüphanesini indiriyoruz
+
+producer = KafkaProducer(bootstrap_servers="IP")
+
+producer.send("kk07","hey millet!".encode()) #Topik adıyla  mesajımzı yolluyoruz.
